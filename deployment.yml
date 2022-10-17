@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: go-movies
-        image: go-movie
+        image: go-movie:latest
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"
